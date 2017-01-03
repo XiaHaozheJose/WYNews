@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4B22E21E1BB02900A431C9 /* test DS.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4B22E11E1BB02900A431C9 /* test DS.m */; };
 		CBBCE1501DC63B640051B28B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCE14F1DC63B640051B28B /* main.m */; };
 		CBBCE1531DC63B640051B28B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCE1521DC63B640051B28B /* AppDelegate.m */; };
 		CBBCE1561DC63B640051B28B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCE1551DC63B640051B28B /* ViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB4B22E01E1BB02900A431C9 /* test DS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test DS.h"; sourceTree = "<group>"; };
+		CB4B22E11E1BB02900A431C9 /* test DS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "test DS.m"; sourceTree = "<group>"; };
 		CBBCE14B1DC63B640051B28B /* 网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBCE14F1DC63B640051B28B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBBCE1511DC63B640051B28B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0B6DCE1E1BAED500CBC73A /* test DS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4B22E01E1BB02900A431C9 /* test DS.h */,
+				CB4B22E11E1BB02900A431C9 /* test DS.m */,
+			);
+			path = "test DS";
+			sourceTree = "<group>";
+		};
 		CBBCE1421DC63B640051B28B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,7 @@
 		CBBCE14D1DC63B640051B28B /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				CB0B6DCE1E1BAED500CBC73A /* test DS */,
 				CBBCE1511DC63B640051B28B /* AppDelegate.h */,
 				CBBCE1521DC63B640051B28B /* AppDelegate.m */,
 				CBBCE1541DC63B640051B28B /* ViewController.h */,
@@ -154,6 +167,7 @@
 					CBBCE14A1DC63B640051B28B = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = S6VFVU3Q4Z;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -199,6 +213,7 @@
 				CBBCE1561DC63B640051B28B /* ViewController.m in Sources */,
 				CBD4C69B1DC75A92003ED8CB /* WYViewController.m in Sources */,
 				CBBCE16B1DC646B20051B28B /* hotViewController.m in Sources */,
+				CB4B22E21E1BB02900A431C9 /* test DS.m in Sources */,
 				CBBCE1711DC646ED0051B28B /* technologyViewController.m in Sources */,
 				CBBCE1741DC6474D0051B28B /* subscribeViewController.m in Sources */,
 				CBBCE1531DC63B640051B28B /* AppDelegate.m in Sources */,
@@ -312,10 +327,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -323,10 +341,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IOS.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
